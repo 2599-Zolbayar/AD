@@ -1,0 +1,40 @@
+p {
+  height: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#SideSongs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 15.4px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+}

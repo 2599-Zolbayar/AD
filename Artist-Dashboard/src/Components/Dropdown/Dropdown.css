@@ -1,0 +1,75 @@
+#Dropdown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  z-index: 3;
+  min-width: 250px;
+  left: 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+#Dropdown > article > img {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+#Dropdown > article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+#Dropdown > article > h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+}
+
+#Dropdown > article > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #111827;
+}
+
+#Dropdown > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#drop-btn > p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #1f2937;
+}
+
+#drop-btn {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 13px;
+  gap: 8px;
+  align-items: center;
+  width: 226px;
+  height: 36px;
+  background: #dbeafe;
+  border-radius: 24px;
+}
+
+#drop-btn:hover {
+  border: 1px solid #93c5fd;
+}/*# sourceMappingURL=Dropdown.css.map */

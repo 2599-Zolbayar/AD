@@ -1,0 +1,299 @@
+$primary: rgba(0, 97, 255, 1);
+$default-font: "Montserrat";
+$text-color: #000000;
+$plus-color: #22c55e;
+$minus-color: rgba(239, 68, 68, 1);
+$btn-hover: #0747cc;
+$bg-color: rgba(255, 255, 255, 1);
+$sidmenu-color: rgba(17, 24, 39, 1);
+$box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+$box-border: 1px solid #e5e7eb;
+$box-gap: 8px;
+$box-padding: 24px;
+$sidemenu-text-color: #ffffff;
+
+#Body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: $bg-color;
+}
+
+#Sidemenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 256px;
+  background: rgba(17, 24, 39, 1);
+  color: $sidemenu-text-color;
+  padding: 0;
+}
+
+main {
+  font-family: $default-font;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 28px;
+  width: 100%;
+}
+
+.bell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: $bg-color;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+hr {
+  background-color: $text-color;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 55px;
+}
+
+h1 {
+  color: $primary;
+  height: 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h2 {
+  height: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+}
+
+span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  gap: 10px;
+  border: 1px;
+}
+
+.my-select {
+  border: 1px solid #6b7280;
+  border-radius: 14px;
+}
+
+.btn {
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  gap: 8px;
+  color: $bg-color;
+
+  width: 85px;
+  height: 24px;
+  border-radius: 16px;
+}
+
+.btn:hover {
+  background-color: $btn-hover;
+  color: $bg-color;
+}
+
+main > section {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 1156px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 273px;
+}
+
+.block1 {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: $box-padding;
+  gap: $box-gap;
+  width: 100%;
+  background: $bg-color;
+
+  border: $box-border;
+
+  box-shadow: $box-shadow;
+  border-radius: 12px;
+}
+
+.progress {
+  width: 100%;
+  height: 24px;
+  background-color: white;
+}
+
+.progress-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.progress::-webkit-progress-value {
+  background-color: $primary;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.progressdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.vectorup {
+  width: 47px;
+  height: 20px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: $plus-color;
+}
+
+.vectordown {
+  width: 47px;
+  height: 20px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: $minus-color;
+}
+
+.showp {
+  display: flex;
+  flex-direction: row;
+  gap: 6.5px;
+}
+
+.hearing-count {
+  width: 225px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+
+  display: flex;
+  align-items: center;
+}
+
+.graph-box {
+  position: "relative";
+  width: 100%;
+  border: $box-border;
+  padding: $box-padding;
+  border-radius: "10px";
+  box-shadow: $box-shadow;
+  border-radius: 16px;
+}
+
+.graph-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.graph-title > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stat-title {
+  display: flex;
+  flex-direction: row;
+  gap: 16.5px;
+}
+
+.stat-title > div {
+  font-size: 12px;
+  color: #676767;
+
+  display: flex;
+  flex-direction: row;
+  gap: 8.5px;
+}
+
+.colgraph {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 830px;
+  height: 342px;
+
+  border: $box-border;
+
+  box-shadow: $box-shadow;
+  border-radius: 16px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: $box-padding;
+  width: 330px;
+  gap: 8px;
+
+  background: $bg-color;
+
+  border: $box-border;
+
+  box-shadow: $box-shadow;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 1000px) {
+  section {
+    flex-direction: column;
+  }
+  .container1 {
+    flex-direction: row;
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+}

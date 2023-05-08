@@ -1,0 +1,107 @@
+#DropArtist {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  z-index: 2;
+  left: 24px;
+  min-width: 255px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.artist-btn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 52px;
+  background: #dbeafe;
+  border-radius: 32px;
+  justify-content: space-between;
+  padding: 8px 12px;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-container > img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.btn-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-start;
+}
+
+.btn-container > div > h3 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  color: #111827;
+}
+
+.btn-container > div > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #111827;
+  display: flex;
+}
+
+#check {
+  display: none;
+  align-items: center;
+}
+
+#arrow {
+  display: none;
+  align-items: center;
+}
+
+.artist-btn:hover {
+  border: 1px solid #93c5fd;
+}
+
+.artist-btn:hover #arrow {
+  display: flex;
+}
+
+.artist-btn:focus {
+  background: #0061ff;
+}
+
+.artist-btn:focus #check {
+  display: flex;
+}
+
+.artist-btn:focus #arrow {
+  display: none;
+}
+
+.artist-btn:focus .btn-container > div > h3 {
+  color: #ffffff;
+}
+
+.artist-btn:focus .btn-container > div > p {
+  color: #ffffff;
+}
